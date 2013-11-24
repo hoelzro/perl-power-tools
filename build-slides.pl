@@ -41,6 +41,7 @@ sub source_to_slides {
 
             # handle my DEMO directive
             if($line =~ s/DEMO\K\[(?<demo_name>.*?)\]//) {
+                # XXX this should go into a div handout
                 # no-op for now; fill in demo gifs later
             }
 
