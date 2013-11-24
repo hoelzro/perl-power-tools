@@ -27,14 +27,14 @@ SLIDE
 
 New output:
 
-  Bad value at test.pl line 21.
-    Room::_trigger_width('Room=HASH(0xde9878)', -10, 10) called at accessor Room::width (defined at test.pl line 5) line 13
-    Room::width('Room=HASH(0xde9878)', -10) called at test.pl line 28
-    main::bar('Room=HASH(0xde9878)') called at test.pl line 33
-    main::foo('Room=HASH(0xde9878)') called at test.pl line 42
-    main::main() called at test.pl line 21.
-    Room::_trigger_width('Room=HASH(0xde9878)', -10, 10) called at accessor Room::width (defined at test.pl line 5) line 13
-    Room::width('Room=HASH(0xde9878)', -10) called at test.pl line 28
-    main::bar('Room=HASH(0xde9878)') called at test.pl line 33
-    main::foo('Room=HASH(0xde9878)') called at test.pl line 42
-    main::main() called at test.pl line 46
+    Bad value at test.pl line 21.
+      Room::_trigger_width('Room=HASH(0xde9878)', -10, 10) called at accessor Room::width (defined at test.pl line 5) line 13
+      Room::width('Room=HASH(0xde9878)', -10) called at test.pl line 28
+      main::bar('Room=HASH(0xde9878)') called at test.pl line 33
+      main::foo('Room=HASH(0xde9878)') called at test.pl line 42
+      main::main() called at test.pl line 21.
+      Room::_trigger_width('Room=HASH(0xde9878)', -10, 10) called at accessor Room::width (defined at test.pl line 5) line 13
+      Room::width('Room=HASH(0xde9878)', -10) called at test.pl line 28
+      main::bar('Room=HASH(0xde9878)') called at test.pl line 33
+      main::foo('Room=HASH(0xde9878)') called at test.pl line 42
+      main::main() called at test.pl line 46
