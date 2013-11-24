@@ -49,7 +49,7 @@ sub source_to_slides {
         chomp $result[-1];
     }
 
-    say join("\n", map { "<div class='slide'>\n" . markdown($_) . "\n</div>" } @result);
+    return join("\n", map { "<div class='slide'>\n" . markdown($_) . "\n</div>" } @result);
 }
 
 my $template_dir = File::Temp->newdir;
