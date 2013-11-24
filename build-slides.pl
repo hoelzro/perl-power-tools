@@ -5,6 +5,9 @@ use warnings;
 use feature qw(say);
 
 use File::Slurp qw(read_file);
+use File::Spec;
+use File::Temp;
+use Template;
 use Text::Markdown qw(markdown);
 
 sub source_to_slides {
@@ -46,8 +49,23 @@ sub source_to_slides {
         chomp $result[-1];
     }
 
-    return @result;
+    say join("\n", map { "<div class='slide'>\n" . markdown($_) . "\n</div>" } @result);
 }
 
+my $template_dir = File::Temp->newdir;
+
 use Data::Printer;
-p [ source_to_slides('regexp-debugger.md') ];
+p source_to_slides('pages/regexp-debugger.md');
+__DATA__
+my $tt = Template->new({
+    INCLUDE_PATH => ['.', $template_dir->dirname],
+});
+
+foreach my $page (glob('pages/*.md')) {
+    my ( undef, undef, $filename ) = File::Spec->splitpath($page);
+    my $slides = source_to_slides($filename);
+    $tt->process(\$slides, {}, File::Spec->catfile($template_dir->dirname,
+        $filename =~ s/[.]md$/.tt/r)) || die $tt->error;
+}
+
+$tt->process('index.tt', {}, 'index.html') || die $tt->error;
