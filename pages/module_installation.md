@@ -66,8 +66,6 @@ SLIDE
 
 The solution: **local::lib**
 
-PAUSE
-
 `local::lib` allows you to maintain a project-specific (or user-specific, or whatever) directory for modules.
 
 % talk about work setup using local::lib
