@@ -104,7 +104,7 @@ SLIDE
 So...how do we debug regexes?
 
 PAUSE
-  * "printf debugging"
+  * printf debugging using `(?{...})`
 PAUSE
   * Remove pieces constantly and see what's working and what's not
 PAUSE
@@ -112,7 +112,7 @@ PAUSE
 
 SLIDE
 
-Enter Regexp::Debugger.
+Enter **Regexp::Debugger**.
 
 SLIDE
 
