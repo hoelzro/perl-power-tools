@@ -44,6 +44,7 @@
 <h4>Booking.com</h4>
 </div>
 
+[% INCLUDE module_installation.tt -%]
 [% INCLUDE regexp_debugger.tt -%]
 [% INCLUDE honorable_mentions.tt -%]
 
