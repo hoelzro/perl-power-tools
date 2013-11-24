@@ -48,14 +48,13 @@ sub source_to_slides {
         }
         chomp $result[-1];
     }
-
     my @html = map { markdown($_) } @result;
 
     my $section = XML::XPath->new(xml => "<html>$html[0]</html>")->find('h1[1]');
 
     return join("\n",
         "<div class='slide'>\n$html[0]\n</div>",
-        map { "<div class='slide'><h1>$section</h1>\n$_\n</div>" } @html);
+        map { "<div class='slide'><h1>$section</h1>\n$_\n</div>" } @html[1..$#html]);
 }
 
 my $template_dir = File::Temp->newdir;
