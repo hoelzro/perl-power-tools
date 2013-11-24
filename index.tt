@@ -29,8 +29,8 @@
 <div id="currentSlide"><!-- DO NOT EDIT --></div>
 <div id="header"></div>
 <div id="footer">
-<h1>[location/date of presentation]</h1>
-<h2>[slide show title here]</h2>
+<h1>AmsterdamX</h1>
+<h2>Perl Power Tools</h2>
 </div>
 
 </div>
@@ -39,12 +39,19 @@
 <div class="presentation">
 
 <div class="slide">
-<h1>[slide show title here]</h1>
-<h3>[name of presenter]</h3>
-<h4>[affiliation of presenter]</h4>
+<h1>Perl Power Tools</h1>
+<h3>Rob Hoelz</h3>
+<h4>Booking.com</h4>
+</div>
+
+<div class="slide">
+<h1>Perl Power Tools</h1>
+<h3>Rob Hoelz</h3>
+<h4>Booking.com (Booking.yeah!)</h4>
 </div>
 
 
+<!--
 <div class="slide">
 <h1>[slide title]</h1>
 <ul>
@@ -54,10 +61,8 @@
 <li>[point four]</li>
 <li>[point five]</li>
 </ul>
-<div class="handout">
-[any material that should appear in print but not on the slide]
 </div>
-</div>
+-->
 
 
 </div>
