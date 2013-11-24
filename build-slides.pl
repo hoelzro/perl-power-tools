@@ -25,12 +25,11 @@ sub source_to_slides {
 
         foreach my $line (@lines) {
             # strip comments
-            $line =~ s/%.*//;
-
-            if($line =~ /^\s*$/) {
+            if($line =~ /^\s*%/) {
                 undef $line;
                 next;
             }
+            $line =~ s/%.*//;
 
             # handle my PAUSE directive
             if($line eq 'PAUSE') {
