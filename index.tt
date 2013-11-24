@@ -46,6 +46,7 @@
 
 [% INCLUDE module_installation.tt -%]
 [% INCLUDE regexp_debugger.tt -%]
+[% INCLUDE data_printer.tt -%]
 [% INCLUDE carp_always.tt -%]
 [% INCLUDE honorable_mentions.tt -%]
 
