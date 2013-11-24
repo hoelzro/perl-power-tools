@@ -2,8 +2,6 @@
 
 % Who here has ever used a regular expression?
 
-SLIDE
-
 % Does anyone recognize this regex? (It's a regex written by Randal Schwartz for parsing JSON)
 
     qr{
