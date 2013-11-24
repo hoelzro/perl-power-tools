@@ -51,7 +51,7 @@ sub source_to_slides {
 
     my @html = map { markdown($_) } @result;
 
-    my $section = XML::XPath->new(xml => $html[0])->find('h1[1]');
+    my $section = XML::XPath->new(xml => "<html>$html[0]</html>")->find('h1[1]');
 
     return join("\n",
         "<div class='slide'>\n$html[0]\n</div>",
