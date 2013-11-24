@@ -49,6 +49,7 @@
 [% INCLUDE data_printer.tt -%]
 [% INCLUDE devel_peek.tt -%]
 [% INCLUDE carp_always.tt -%]
+[% INCLUDE devel_repl.tt -%]
 [% INCLUDE honorable_mentions.tt -%]
 
 </div>
