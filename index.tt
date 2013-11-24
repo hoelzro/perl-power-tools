@@ -45,6 +45,7 @@
 </div>
 
 [% INCLUDE regexp_debugger.tt -%]
+[% INCLUDE honorable_mentions.tt -%]
 
 </div>
 
