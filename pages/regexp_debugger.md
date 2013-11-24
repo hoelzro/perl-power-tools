@@ -192,7 +192,7 @@ SLIDE
 
 % Let's return to that earlier question, but with a twist: Who here has ever had a regular expression go wrong?
 
-![Perl Problems](/images/perl_problems.jpg)
+![Perl Problems](images/perl_problems.png)
 
 SLIDE
 
