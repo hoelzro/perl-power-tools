@@ -1,14 +1,14 @@
 #!/usr/bin/env perl
 
-use strict;
+use 5.14.0;
 use warnings;
-use feature qw(say);
 
 use File::Slurp qw(read_file);
 use File::Spec;
 use File::Temp;
 use Template;
 use Text::Markdown qw(markdown);
+use XML::XPath;
 
 sub source_to_slides {
     my ( $filename ) = @_;
@@ -49,7 +49,13 @@ sub source_to_slides {
         chomp $result[-1];
     }
 
-    return join("\n", map { "<div class='slide'>\n" . markdown($_) . "\n</div>" } @result);
+    my @html = map { markdown($_) } @result;
+
+    my $section = XML::XPath->new(xml => $html[0])->find('h1[1]');
+
+    return join("\n",
+        "<div class='slide'>\n$html[0]\n</div>",
+        map { "<div class='slide'><h1>$section</h1>\n$_\n</div>" } @html);
 }
 
 my $template_dir = File::Temp->newdir;
