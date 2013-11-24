@@ -117,3 +117,5 @@ Enter **Regexp::Debugger**.
 SLIDE
 
 DEMO[regexp-debugger.gif]
+
+% Don't forget: Regexp::Debugger is lexical!
