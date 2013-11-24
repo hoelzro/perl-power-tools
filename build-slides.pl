@@ -54,16 +54,13 @@ sub source_to_slides {
 
 my $template_dir = File::Temp->newdir;
 
-use Data::Printer;
-p source_to_slides('pages/regexp-debugger.md');
-__DATA__
 my $tt = Template->new({
     INCLUDE_PATH => ['.', $template_dir->dirname],
 });
 
 foreach my $page (glob('pages/*.md')) {
     my ( undef, undef, $filename ) = File::Spec->splitpath($page);
-    my $slides = source_to_slides($filename);
+    my $slides = source_to_slides($page);
     $tt->process(\$slides, {}, File::Spec->catfile($template_dir->dirname,
         $filename =~ s/[.]md$/.tt/r)) || die $tt->error;
 }
