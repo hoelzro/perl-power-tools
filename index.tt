@@ -51,6 +51,7 @@
 [% INCLUDE carp_always.tt -%]
 [% INCLUDE devel_repl.tt -%]
 [% INCLUDE honorable_mentions.tt -%]
+[% INCLUDE credits.tt -%]
 
 </div>
 
