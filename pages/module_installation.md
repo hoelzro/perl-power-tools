@@ -19,8 +19,6 @@ SLIDE
 
 So now that we've talked about the old way...
 
-PAUSE
-
 ...what's the new way?
 
 SLIDE

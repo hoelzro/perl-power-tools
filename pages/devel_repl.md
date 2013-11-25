@@ -5,7 +5,7 @@
 
 SLIDE
 
-**Devel::REPL** (and its little brother **Reply**)
+**Devel::REPL** (and its sibling **Reply**)
 
 SLIDE
 
