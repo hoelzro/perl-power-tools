@@ -8,13 +8,6 @@ SLIDE
 
 ## Installing modules the old way
 
-PAUSE
-* Go to `search.cpan.org`, download, build, and install the tarball yourself
-PAUSE
-* Use the `cpan` command
-PAUSE
-* Use vendor-provided packages
-
 SLIDE
 
 So now that we've talked about the old way...
@@ -28,13 +21,6 @@ SLIDE
 PAUSE
 
 Unlike `cpan`, `cpanm` stays out of your way.
-
-PAUSE
-* It doesn't ask you for a boatload of configuration on first start
-PAUSE
-* It assumes you want to follow dependencies
-PAUSE
-* It doesn't bore you with reams of configure/build/test output unless you ask for it
 
 SLIDE
 
