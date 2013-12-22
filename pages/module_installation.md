@@ -1,8 +1,7 @@
 # Module Installation
 
-% All of what I'm about to show you is available on the CPAN, so let's cover how to install them first.
-
-% Who here does *not* know how to install a Perl module?
+Over the course of this presentation, we'll be building up a developer's workbench.  All of the tools I'm
+about to show you are available on the CPAN, so let's cover how to install them first.
 
 SLIDE
 
@@ -46,11 +45,18 @@ SLIDE
 
 `cpanm` is a zero-configuration tool, but it *does* support special options if you need them.
 
-% Such as not running the test suite
-% Installing from a specific mirror
-% forcing installation if tests fail
-% Only installing a module's dependencies
-% Inspecting the contents of a module distribution
+PAUSE
+* Such as not running the test suite (`-n`)
+PAUSE
+* Installing from a specific mirror (`--mirror`)
+PAUSE
+* forcing installation if tests fail (`-f`)
+PAUSE
+* Only installing a module's dependencies (`--installdeps`)
+PAUSE
+* Inspecting the contents of a module distribution (`--look`)
+PAUSE
+* And much, much more!
 
 SLIDE
 
@@ -59,12 +65,9 @@ But what if you don't want to install modules globally? Maybe...
 PAUSE
 * You're on a box on which you don't have root access
 PAUSE
-* You don't want modules to be available globally
-% In case you want to catch debugging statements before deploying to production
+* You don't want modules to be available globally (In case you want to catch debugging statements before deploying to production)
 PAUSE
-* You want globally installed modules installed via your system package manager, and you don't have a package for a module
-
-% These are all very applicable to the developer's toolbox we're working to create!
+* You want globally installed modules installed via your system package manager, and you don't have a package for a module (Let's say you want to try out several logging modules without having to create an RPM for each)
 
 SLIDE
 
@@ -72,5 +75,6 @@ The solution: **local::lib**
 
 `local::lib` allows you to maintain a project-specific (or user-specific, or whatever) directory for modules.
 
-% talk about work setup using local::lib
+PAUSE
 
+For example, I have a local::lib under `$HOME/devlib` at work so I can keep my tools isolated from production stuff.
