@@ -45,6 +45,7 @@
 <h4>Booking.com</h4>
 </div>
 
+[% INCLUDE intro.tt -%]
 [% INCLUDE module_installation.tt -%]
 [% INCLUDE regexp_debugger.tt -%]
 [% INCLUDE data_printer.tt -%]
