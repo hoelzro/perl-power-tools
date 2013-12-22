@@ -15,6 +15,12 @@ PAUSE
 PAUSE
 * Use vendor-provided packages
 
+PAUSE
+
+Note that all of these still have valid uses; some modules require a little more tender love and care and need
+to be installed manually; sometimes all you have on a machine is `cpan`, and sometimes you want to only work
+with a set of 'blessed' modules in your package repository.
+
 SLIDE
 
 So now that we've talked about the old way...
