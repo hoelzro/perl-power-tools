@@ -1,10 +1,13 @@
 # Regular Expressions
 
+As Perl programmers, we often leverage the power of regular expressions...
+
+PAUSE
+
+...but their power and expressiveness can make them easy to abuse and tricky to debug.  Have
+a look at this regex:
+
 SLIDE
-
-% Who here has ever used a regular expression?
-
-% Does anyone recognize this regex? (It's a regex written by Randal Schwartz for parsing JSON)
 
     qr{
 
@@ -95,7 +98,11 @@ SLIDE
 
 SLIDE
 
-% Let's return to that earlier question, but with a twist: Who here has ever had a regular expression go wrong?
+I didn't even include the whole thing; this is a regex that venerable Perl hacker
+Randal Schwartz wrote for parsing JSON.  It's very clever, but if something like this
+breaks while you're writing it, you've got a problem.
+
+PAUSE
 
 ![Perl Problems](images/perl_problems.png)
 
@@ -116,6 +123,11 @@ Enter **Regexp::Debugger**.
 
 SLIDE
 
-DEMO[regexp-debugger.gif]
+DEMO (the screen refreshes are a bit annoying, but hopefully the point is illustrated)
 
-% Don't forget: Regexp::Debugger is lexical!
+<http://showterm.io/74d851d162bf5c93b5bb1>
+
+SLIDE
+
+Take note: `Regexp::Debugger` is lexical.  That means that we can debug certain regular expression
+while leaving the rest of the program alone.
