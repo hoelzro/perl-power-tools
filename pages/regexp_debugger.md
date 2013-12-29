@@ -131,3 +131,8 @@ SLIDE
 
 Take note: `Regexp::Debugger` is lexical.  That means that we can debug certain regular expression
 while leaving the rest of the program alone.
+
+In addition to helping you debug hairy regexes, `Regexp::Debugger` can also help you learn how
+the Perl interpreter executes a regular expression.  For example, did you know that `$` doesn't
+*really* mean end of string?  Run it through `Regexp::Debugger` (or consult perlreref) to find
+out more!
