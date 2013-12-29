@@ -1,5 +1,11 @@
 # Honorable Mentions
 
+Sadly, I couldn't fit every tool I find useful into this talk.  So here's a list
+of others I considered.  You may see some old friends here, but hopefully you'll
+make some new ones too!
+
+SLIDE
+
 PAUSE
 * pmtools by MLFISHER (originally by Tom Christiansen)
 PAUSE
