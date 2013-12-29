@@ -28,5 +28,5 @@ source, you can see that dumping something is done with a simple
 `p` function; `Data::Printer` makes sure it's quick and easy to
 see what you need.  You may also tell `Data::Printer` to print certain
 objects specially; for example, if you don't care about the internals
-of a DateTime object.  Check the documentation for all of the cool
+of a `DateTime` object.  Check the documentation for all of the cool
 tricks you can do!
